@@ -1,0 +1,63 @@
+# This working folder also holds raw renders, earlier iterations and files from other sections.
+# The repository tracks only what is listed below.
+/*
+!/.gitignore
+!/README.md
+!/docs/
+!/3d/
+!/web/
+!/photos/
+
+# 3D: the model, the scripts in use, and the anchor data
+/3d/*
+!/3d/requirements.txt
+!/3d/v3/
+!/3d/v4/
+!/3d/v5/
+/3d/v3/*
+!/3d/v3/dexteria-ball-v3.blend
+!/3d/v3/scripts/
+/3d/v3/scripts/*
+!/3d/v3/scripts/studio.py
+!/3d/v3/scripts/post.py
+/3d/v4/*
+!/3d/v4/scripts/
+/3d/v4/scripts/*
+!/3d/v4/scripts/render4.py
+/3d/v5/*
+!/3d/v5/anchors51.json
+!/3d/v5/scripts/
+/3d/v5/scripts/*
+!/3d/v5/scripts/film51.py
+!/3d/v5/scripts/post5.py
+!/3d/v5/scripts/run51.sh
+
+# Website: the two sections and the demo app with its assets
+/web/*
+!/web/components/
+!/web/demo/
+/web/components/*
+!/web/components/features-v3/
+!/web/components/team-v3/
+/web/demo/*
+!/web/demo/app/
+!/web/demo/public/
+!/web/demo/jsconfig.json
+!/web/demo/next.config.mjs
+!/web/demo/package.json
+!/web/demo/package-lock.json
+/web/demo/public/*
+!/web/demo/public/dexteria/
+!/web/demo/public/team/
+/web/demo/public/dexteria/*
+!/web/demo/public/dexteria/v51/
+
+# Portrait scripts only (source photos stay private)
+/photos/*
+!/photos/scripts/
+
+.DS_Store
+__pycache__/
+*.blend1
+node_modules/
+.next*/
