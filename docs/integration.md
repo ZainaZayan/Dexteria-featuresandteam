@@ -3,6 +3,10 @@
 Both sections are React components with CSS Modules. They need React 18 or newer and nothing else,
 so they work in Next.js and in Vite + React.
 
+Tested in the team's Vite project (Vite 5.4, React 18.3) by following the steps below exactly:
+the production build passes with no warnings, and both sections work on desktop and phone,
+including press and hold, callouts, the chapter timeline and the team links.
+
 ## 1. Copy the files
 
 | From this repository | To the main site |
