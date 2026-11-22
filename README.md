@@ -87,9 +87,7 @@ the Archivo typeface (Google Fonts), and Apple's Vision framework, which is buil
 
 ## Status
 
-- The film is rendered in passes (every 4th frame, then every 2nd, then all). The page uses the
-  nearest available frame, so it works at every stage. Remaining frames will be added as the
-  final pass completes.
+- All 266 frames of the film are rendered and included (about 18 MB for desktop, 8 MB for phones).
 - Wording follows the team rule: "practice", "progress" and "wellness", never "therapy",
   "treatment" or "medical-grade".
 - All numbers on the page (grip pressure, progress chart) are example values, labelled as such.
