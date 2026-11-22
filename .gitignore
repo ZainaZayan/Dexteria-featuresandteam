@@ -7,6 +7,7 @@
 !/3d/
 !/web/
 !/photos/
+!/team-export/
 
 # 3D: the model, the scripts in use, and the anchor data
 /3d/*
@@ -39,6 +40,8 @@
 /web/components/*
 !/web/components/features-v3/
 !/web/components/team-v3/
+!/web/components/features-v4/
+!/web/components/team-v4/
 /web/demo/*
 !/web/demo/app/
 !/web/demo/public/
@@ -51,6 +54,10 @@
 !/web/demo/public/team/
 /web/demo/public/dexteria/*
 !/web/demo/public/dexteria/v51/
+
+# Export to the team repository (script only)
+/team-export/*
+!/team-export/build.mjs
 
 # Portrait scripts only (source photos stay private)
 /photos/*
