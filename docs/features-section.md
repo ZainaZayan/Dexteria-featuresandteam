@@ -1,6 +1,6 @@
 # Features section
 
-Folder: `web/components/features-v3/`
+Folder: `web/components/features-v4/`
 
 | File | Responsibility |
 |---|---|

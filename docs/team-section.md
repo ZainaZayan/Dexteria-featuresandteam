@@ -1,6 +1,6 @@
 # Team section
 
-Folder: `web/components/team-v3/`
+Folder: `web/components/team-v4/`
 
 A server component with no JavaScript: portraits and type straight on the page, no cards or shadows,
 in the same palette and type scale as the Features section.
@@ -9,7 +9,8 @@ Props: `photosPath` (default `"/team"`), the folder that holds the portraits.
 
 ## Editing team details
 
-Everything is in the `TEAM` list at the top of `TeamSection.jsx`:
+Everything is in the `TEAM` list at the top of `TeamSection.jsx`. People appear in the order of that list:
+product engineers first, then the two mobile and game engineers, then backend and cloud.
 
 | Field | Meaning |
 |---|---|

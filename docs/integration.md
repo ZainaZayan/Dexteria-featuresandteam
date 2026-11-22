@@ -11,8 +11,8 @@ including press and hold, callouts, the chapter timeline and the team links.
 
 | From this repository | To the main site |
 |---|---|
-| `web/components/features-v3/` | components folder |
-| `web/components/team-v3/` | components folder |
+| `web/components/features-v4/` | components folder |
+| `web/components/team-v4/` | components folder |
 | `web/demo/public/dexteria/v51/` | `public/dexteria/v51/` |
 | `web/demo/public/team/` | `public/team/` |
 
@@ -44,8 +44,8 @@ const archivo = Archivo({ subsets: ["latin"], axes: ["wdth"], variable: "--font-
 ## 3. Render them
 
 ```jsx
-import FeaturesSection from "./components/features-v3/FeaturesSection";
-import TeamSection from "./components/team-v3/TeamSection";
+import FeaturesSection from "./components/features-v4/FeaturesSection";
+import TeamSection from "./components/team-v4/TeamSection";
 
 <FeaturesSection framesPath="/dexteria/v51" />
 <TeamSection photosPath="/team" />

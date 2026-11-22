@@ -18,12 +18,13 @@ Westminster. These two sections are my part of the landing page (Zaina Zayan).
 
 | Folder | What is in it |
 |---|---|
-| `web/components/features-v3/` | The Features section (React, CSS Modules) |
-| `web/components/team-v3/` | The Team section (React, CSS Modules) |
+| `web/components/features-v4/` | The Features section (React, CSS Modules) |
+| `web/components/team-v4/` | The Team section (React, CSS Modules) |
 | `web/demo/` | A small Next.js app that shows both sections, plus their assets in `public/` |
 | `3d/` | The Blender model and the Python scripts that animate, render and export the film |
 | `photos/scripts/` | The scripts that prepare the team portraits |
 | `docs/` | Detailed documentation for each part |
+| `team-export/` | Exports both sections as plain HTML for the team repository |
 
 ## Running it locally
 
@@ -42,7 +43,7 @@ Then open http://localhost:3030.
 Both sections are plain React components with CSS Modules and no other dependencies, so they work
 in Next.js or in a Vite + React app.
 
-1. Copy `web/components/features-v3/` and `web/components/team-v3/` into the site's components.
+1. Copy `web/components/features-v4/` and `web/components/team-v4/` into the site's components.
 2. Copy `web/demo/public/dexteria/v51/` and `web/demo/public/team/` into the site's `public/` folder.
 3. Load the Archivo font with its width axis and expose it as `--font-archivo` (see
    [docs/integration.md](docs/integration.md) for the Next.js and plain HTML versions).
@@ -72,6 +73,25 @@ cut out with Apple's Vision framework, framed by eye position so every head is t
 height, placed on one shared backdrop, and graded to the same warm black and white.
 
 ![Team portraits](docs/images/team-portraits.jpg)
+
+## Colours
+
+Both sections use the team palette from the Dexteria logo, the same one as the other sections of
+the landing page: cream `#F0ECE3`, ink `#1C281E`, sage `#5F6E5C`, light sage `#A9B8A4` and amber `#A86A28`.
+
+## In the team repository
+
+The full landing page is put together in [dexterialk/ATP_cs-06](https://github.com/dexterialk/ATP_cs-06),
+where each section is a plain HTML file in `landing-page-components/`. To update our two sections there:
+
+```bash
+node team-export/build.mjs
+```
+
+This writes `components/features.html` and `components/team.html`, their styles in `css/`, the script
+for the film in `js/`, and the frames and portraits in `images/features/` and `images/team/`.
+Class names start with `dx-feat-` or `dx-team-`, so they cannot clash with other sections.
+The script expects the team repository cloned into `team-repo/` next to this one.
 
 ## Documentation
 
