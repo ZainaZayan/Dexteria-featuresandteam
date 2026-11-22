@@ -16,7 +16,7 @@ Everything is in the `TEAM` list at the top of `TeamSection.jsx`:
 | `name` | Full name as it should appear |
 | `role` | One line. While it is empty the card shows "Role to be confirmed" |
 | `photo` | File name inside `photosPath`. While it is empty the card shows the backdrop with initials |
-| `linkedin`, `github`, `email` | Leave empty to hide that link |
+| `linkedin`, `github`, `email` | Shown as icons under the role. Leave empty to hide that icon |
 
 Phone numbers are not shown, because the page is public.
 

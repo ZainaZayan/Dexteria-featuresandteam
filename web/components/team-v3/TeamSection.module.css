@@ -135,27 +135,28 @@
 
 .links {
   display: flex;
-  flex-wrap: wrap;
-  gap: 4px 16px;
-  margin: 0;
+  gap: 4px;
+  margin: 0 0 0 -7px; /* the first icon's edge lines up with the text above */
   padding: 0;
   list-style: none;
-  font-size: var(--fs-small);
 }
-.links a {
+/* 32px hit area around an 18px icon, easy to tap */
+.icon {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
   color: var(--ink);
-  text-decoration: none;
-  background: linear-gradient(currentColor, currentColor) left bottom / 100% 1px no-repeat;
-  padding-bottom: 2px;
-  transition: background-size 0.4s var(--ease), color 0.2s;
+  transition: color 0.25s, background-color 0.25s;
 }
-.links a:hover {
+.icon:hover {
   color: var(--green);
-  background-size: 0 1px;
+  background-color: rgba(80, 124, 85, 0.1);
 }
-.links a:focus-visible {
+.icon:focus-visible {
   outline: 2px solid var(--green);
-  outline-offset: 3px;
+  outline-offset: 1px;
 }
 
 /* ------------------------------------------------ type: one family, three widths */
@@ -218,7 +219,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   .frame img,
-  .links a {
+  .icon {
     transition: none;
   }
   .person:hover .frame img {
